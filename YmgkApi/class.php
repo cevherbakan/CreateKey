@@ -13,7 +13,7 @@ class KeyClass
     $new_key = hash('sha3-256' , rand());
     
         
-        for($x = 0; $x < 100000; $x++)
+        for($x = 0; $x < 1000000; $x++)
         {
             
                 
