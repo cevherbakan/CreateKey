@@ -9,17 +9,16 @@ header("Access-Control-Allow-Headers:
 
     $postdata = file_get_contents("php://input");
 
-    if(isset($postdata)){
-        $request = json_decode($postdata);
-
+    if(isset($postdata)){   //Verinin gönderilip gönderilmediğini kontrol eder
+        $request = json_decode($postdata);  // json formatında alınan veri değişkene aktarılır.
 
 
         if (!empty($request->key)) {
             
-            $key = $request->key;
+            $key = $request->key;   // Verinin key değeri alınır
             
-            $keyObject = new KeyClass();
-            echo json_encode($keyObject->createKey($key), JSON_UNESCAPED_UNICODE);
+            $keyObject = new KeyClass();    // KeyClass sınıfından bir nesne üretilir
+            echo json_encode($keyObject->createKey($key), JSON_UNESCAPED_UNICODE); // işlem sonucu dönderilir
 
         }
         
