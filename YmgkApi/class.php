@@ -5,7 +5,8 @@
 
 class KeyClass
 {
-
+ 
+ 
  
     function createKey($key)  // createKey fonksiyonu sha3-256 formatında bir milyon defa key üretir.
     {
@@ -13,7 +14,7 @@ class KeyClass
     $new_key = hash('sha3-256' , rand());
     
         
-        for($x = 0; $x < 1000000; $x++)
+        for($x = 0; $x < 10000000; $x++)
         {
             
                 
