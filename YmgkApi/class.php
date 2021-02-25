@@ -3,7 +3,7 @@
 
 
 
-class KeyClass
+class KeyClass // key üretme sınıfı
 {
  
  
